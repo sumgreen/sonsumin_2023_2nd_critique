@@ -68,6 +68,7 @@ video {
   max-width: var(--max-width);
   margin-inline: auto;
   padding: 3rem 1.5rem;
+  /* 건드리면 안될 수도 */
 }
 
 a.btn,
@@ -93,7 +94,8 @@ a.btn::after,
   position: absolute;
   z-index: -1;
   height: 2.5rem;
-  transition: background-color 150ms ease-out, box-shadow 150ms ease-out, color 150ms ease-out;
+  transition: background-color 150ms ease-out, box-shadow 150ms ease-out,
+    color 150ms ease-out;
   border-radius: 0.5rem;
   background-color: var(--btn-filled-bg);
   inset-inline: 0;
@@ -217,36 +219,46 @@ a.btn--type-elevated.disabled::after,
 
 @media (prefers-color-scheme: dark) {
   .btn:hover::after {
-    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
   }
   .btn--type-elevated::after {
-    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
   }
   .btn--type-elevated:hover::after {
-    box-shadow: 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.15),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
   }
   .btn--type-elevated:focus::after {
-    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
   }
   .btn--type-elevated:active::after {
-    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3);
   }
 }
 @media (prefers-color-scheme: light) {
   .btn:hover::after {
-    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3),
+      0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
   }
   .btn--type-elevated::after {
-    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3),
+      0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
   }
   .btn--type-elevated:hover::after {
-    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3), 0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3),
+      0 0.125rem 0.375rem 0.125rem rgba(0, 0, 0, 0.15);
   }
   .btn--type-elevated:focus::after {
-    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3),
+      0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
   }
   .btn--type-elevated:active::after {
-    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.3),
+      0 0.0625rem 0.1875rem 0.0625rem rgba(0, 0, 0, 0.15);
   }
 }
 iframe,
@@ -315,12 +327,14 @@ footer ol li {
 
 @media (prefers-color-scheme: dark) {
   main .shaddowWrap {
-    box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15),
+      0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
   }
 }
 @media (prefers-color-scheme: light) {
   main .shaddowWrap {
-    box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15),
+      0 0.25rem 0.25rem rgba(0, 0, 0, 0.3);
   }
 }
 @media (width < 37.5rem) {
@@ -337,4 +351,58 @@ footer ol li {
   nav .wrapper .fullColumn {
     grid-column: 1;
   }
+}
+
+.image-container1 {
+  position: relative;
+  /* border: 10px solid red; */
+}
+
+.maybe {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.lottie-container1 {
+  position: absolute;
+  bottom: 30px;
+  left: 26px;
+  width: 50%;
+  /* border: 10px solid red; */
+}
+
+.image-container2 {
+  position: relative;
+  /* border: 10px solid red; */
+}
+
+.ideal {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.lottie-container2 {
+  position: absolute;
+  top: -50px;
+  right: 26px;
+  width: 50%;
+  /* border: 10px solid red; */
+}
+
+.image-container3 {
+  position: relative;
+  /* border: 10px solid red; */
+}
+
+.chioces {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.lottie-container3 {
+  position: absolute;
+  bottom: 250px;
+  right: 150px;
+  width: 50%;
+  /* border: 10px solid red; */
 }
