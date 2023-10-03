@@ -383,7 +383,7 @@ footer ol li {
 
 .lottie-container2 {
   position: absolute;
-  top: -50px;
+  top: -80px;
   right: 26px;
   width: 50%;
   /* border: 10px solid red; */
@@ -401,8 +401,49 @@ footer ol li {
 
 .lottie-container3 {
   position: absolute;
-  bottom: 250px;
+  top: -30px;
   right: 150px;
   width: 50%;
   /* border: 10px solid red; */
+}
+
+.image-container4 {
+  position: relative;
+  /* border: 10px solid red; */
+}
+
+.dia2 {
+  max-width: 70px;
+  margin: 0 auto;
+}
+
+.lottie-container4 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  /* border: 10px solid red; */
+}
+
+.tt {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.lottie-container5 {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  /* border: 10px solid red; */
+}
+
+.cat {
+  margin: 0 auto;
+}
+
+.avsb {
+  margin: 0 auto;
 }
